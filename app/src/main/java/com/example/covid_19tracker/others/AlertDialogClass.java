@@ -32,6 +32,8 @@ public class AlertDialogClass extends Dialog implements View.OnClickListener {
         setContentView(R.layout.alert_dialog);
         getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
         getWindow().setBackgroundDrawableResource(R.color.transparent);
+        setCancelable(false);
+        setCanceledOnTouchOutside(false);
 
         TextView tryAgainButton = findViewById(R.id.adTryAgain);
         tryAgainButton.setOnClickListener(this);
