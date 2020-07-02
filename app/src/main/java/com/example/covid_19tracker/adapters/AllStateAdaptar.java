@@ -48,7 +48,7 @@ public class AllStateAdaptar extends RecyclerView.Adapter<AllStateAdaptar.StateV
     public StateViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
 
-            return new StateViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.state_item, parent, false));
+        return new StateViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.state_item, parent, false));
 
 
     }
@@ -57,21 +57,23 @@ public class AllStateAdaptar extends RecyclerView.Adapter<AllStateAdaptar.StateV
     public void onBindViewHolder(@NonNull StateViewHolder holder, int position) {
 
 
-            holder.stateName.setText(stateDataList.get(position).getStateName());
-            holder.totalCase.setText(stateDataList.get(position).getTotalCase());
-            holder.activeCase.setText(stateDataList.get(position).getActiveCase());
-            holder.recovered.setText(stateDataList.get(position).getTotalRecovered());
-            holder.totalDeaths.setText(stateDataList.get(position).getTotalDeaths());
-            holder.deathsToday.setText(stateDataList.get(position).getTodayDeaths());
-            holder.todayCase.setText(stateDataList.get(position).getTodayCase());
-            holder.updated.setText(stateDataList.get(position).getLastUpdated());
+        holder.stateName.setText(stateDataList.get(position).getStateName());
+        holder.totalCase.setText(stateDataList.get(position).getTotalCase());
+        holder.activeCase.setText(stateDataList.get(position).getActiveCase());
+        holder.recovered.setText(stateDataList.get(position).getTotalRecovered());
+        holder.totalDeaths.setText(stateDataList.get(position).getTotalDeaths());
+        holder.deathsToday.setText(stateDataList.get(position).getTodayDeaths());
+        holder.todayCase.setText(stateDataList.get(position).getTodayCase());
+        holder.updated.setText(stateDataList.get(position).getLastUpdated());
 
-            holder.itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    mInterface.OnRecyclerItemClickListener(position);
-                }
-            });
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (position==0)
+                    return; // For making sure that user does not click on the first item of recycler view.(Cz: it shows not any state but total covid data)
+                mInterface.OnRecyclerItemClickListener(position);
+            }
+        });
 
 
     }
