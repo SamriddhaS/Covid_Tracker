@@ -4,15 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 public class IndiaDataByTime {
 
-    @SerializedName("dailyconfirmed")
-    private String todayCase ;
-
-    @SerializedName("dailydeceased")
-    private String todayDeath ;
-
-    @SerializedName("dailyrecovered")
-    private String todayRecovered ;
-
     @SerializedName("totalconfirmed")
     private String totalCase ;
 
@@ -25,29 +16,6 @@ public class IndiaDataByTime {
     @SerializedName("date")
     private String date ;
 
-    public String getTodayCase() {
-        return todayCase;
-    }
-
-    public void setTodayCase(String todayCase) {
-        this.todayCase = todayCase;
-    }
-
-    public String getTodayDeath() {
-        return todayDeath;
-    }
-
-    public void setTodayDeath(String todayDeath) {
-        this.todayDeath = todayDeath;
-    }
-
-    public String getTodayRecovered() {
-        return todayRecovered;
-    }
-
-    public void setTodayRecovered(String todayRecovered) {
-        this.todayRecovered = todayRecovered;
-    }
 
     public String getTotalCase() {
         return totalCase;

@@ -12,9 +12,6 @@ public class IndiaDetailData {
     @SerializedName("statewise")
     private List<IndiaStateData> stateDataList ;
 
-    @SerializedName("tested")
-    private List<IndiaTested> indiaTestedList ;
-
     public List<IndiaDataByTime> getDataByTimeList() {
         return dataByTimeList;
     }
@@ -31,11 +28,4 @@ public class IndiaDetailData {
         this.stateDataList = stateDataList;
     }
 
-    public List<IndiaTested> getIndiaTestedList() {
-        return indiaTestedList;
-    }
-
-    public void setIndiaTestedList(List<IndiaTested> indiaTestedList) {
-        this.indiaTestedList = indiaTestedList;
-    }
 }

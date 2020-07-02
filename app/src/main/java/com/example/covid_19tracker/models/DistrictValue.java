@@ -9,9 +9,6 @@ public class DistrictValue {
     @SerializedName("districtData")
     public HashMap<String,Districts> districts ;
 
-    @SerializedName("statecode")
-    private String stateCode ;
-
     public HashMap<String, Districts> getDistricts() {
         return districts;
     }
@@ -20,13 +17,6 @@ public class DistrictValue {
         this.districts = districts;
     }
 
-    public String getStateCode() {
-        return stateCode;
-    }
-
-    public void setStateCode(String stateCode) {
-        this.stateCode = stateCode;
-    }
 
     public DistrictValue() {
         this.districts = new HashMap<>();

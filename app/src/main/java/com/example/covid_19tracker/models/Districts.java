@@ -4,10 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 public class Districts {
 
-
-    @SerializedName("notes")
-    private String note ;
-
     @SerializedName("active")
     private String activeCase ;
 
@@ -19,17 +15,6 @@ public class Districts {
 
     @SerializedName("deceased")
     private String deaths ;
-
-    @SerializedName("delta")
-    private DeltaData todayData ;
-
-    public String getNote() {
-        return note;
-    }
-
-    public void setNote(String note) {
-        this.note = note;
-    }
 
     public String getActiveCase() {
         return activeCase;
@@ -63,11 +48,4 @@ public class Districts {
         this.deaths = deaths;
     }
 
-    public DeltaData getTodayData() {
-        return todayData;
-    }
-
-    public void setTodayData(DeltaData todayData) {
-        this.todayData = todayData;
-    }
 }
