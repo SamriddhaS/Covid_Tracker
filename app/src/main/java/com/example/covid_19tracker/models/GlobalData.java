@@ -1,7 +1,6 @@
 package com.example.covid_19tracker.models;
 
 public class GlobalData {
-
     private String updated ;
     private String cases ;
     private String todayCases ;
@@ -15,6 +14,15 @@ public class GlobalData {
     private String tests ;
     private String testsPerOneMillion ;
     private String affectedCountries ;
+    private Long networkFetchTime;
+
+    public Long getNetworkFetchTime() {
+        return networkFetchTime;
+    }
+
+    public void setNetworkFetchTime(Long networkFetchTime) {
+        this.networkFetchTime = networkFetchTime;
+    }
 
     public void setUpdated(String updated) {
         this.updated = updated;
@@ -119,4 +127,7 @@ public class GlobalData {
     public String getAffectedCountries() {
         return affectedCountries;
     }
+
+
+
 }

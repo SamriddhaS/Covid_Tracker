@@ -1,4 +1,4 @@
-package com.example.covid_19tracker.db.network;
+package com.example.covid_19tracker.data.network;
 
 import com.example.covid_19tracker.models.DistrictName;
 import com.google.gson.GsonBuilder;

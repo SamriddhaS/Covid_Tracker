@@ -9,7 +9,7 @@
 
 
     <ProgressBar
-        android:id="@+id/simpleArcLoader"
+        android:id="@+id/arcLoader"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_gravity="center"

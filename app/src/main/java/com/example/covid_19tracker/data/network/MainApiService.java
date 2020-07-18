@@ -1,4 +1,4 @@
-package com.example.covid_19tracker.db.network;
+package com.example.covid_19tracker.data.network;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

@@ -6,8 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+
+import com.example.covid_19tracker.data.repository.Repository;
 import com.example.covid_19tracker.models.DistrictName;
-import com.example.covid_19tracker.db.repository.Repository;
 
 
 public class DistrictViewModel extends AndroidViewModel {

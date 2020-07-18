@@ -60,7 +60,7 @@ dependencies {
 // For Kotlin use navigation-ui-ktx
 
 
-    // LifeCycle : viewModel and live data library
+    // ViewModel and Live data library : Java
     def lifecycle_version = "2.2.0"
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"

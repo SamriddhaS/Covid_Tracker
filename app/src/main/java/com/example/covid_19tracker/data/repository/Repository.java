@@ -1,16 +1,16 @@
-package com.example.covid_19tracker.db.repository;
+package com.example.covid_19tracker.data.repository;
 
 import android.util.Log;
 
 import androidx.lifecycle.MutableLiveData;
 
+import com.example.covid_19tracker.data.network.Apis;
+import com.example.covid_19tracker.data.network.IndiaDetailService;
+import com.example.covid_19tracker.data.network.MainApiService;
 import com.example.covid_19tracker.models.CountryData;
 import com.example.covid_19tracker.models.DistrictName;
-import com.example.covid_19tracker.models.IndiaDetailData;
-import com.example.covid_19tracker.db.network.Apis;
 import com.example.covid_19tracker.models.GlobalData;
-import com.example.covid_19tracker.db.network.IndiaDetailService;
-import com.example.covid_19tracker.db.network.MainApiService;
+import com.example.covid_19tracker.models.IndiaDetailData;
 
 import java.util.List;
 

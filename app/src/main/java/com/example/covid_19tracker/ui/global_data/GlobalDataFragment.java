@@ -88,7 +88,7 @@ public class GlobalDataFragment extends Fragment implements AlertDialogClass.Ale
         totalTested = (TextView) view.findViewById(R.id.tvTested);
         testsPM = (TextView) view.findViewById(R.id.tvTestsPM);
         affectedCountries = (TextView) view.findViewById(R.id.tvAffectedCountries);
-        simpleArcLoader = (ProgressBar) view.findViewById(R.id.simpleArcLoader);
+        simpleArcLoader = (ProgressBar) view.findViewById(R.id.arcLoader);
         pieChart = (PieChart) view.findViewById(R.id.pieChart);
         nestedScrollView = (ScrollView) view.findViewById(R.id.nestedScrollView);
         navController = Navigation.findNavController(view);

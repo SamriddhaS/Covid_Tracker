@@ -1,4 +1,4 @@
-package com.example.covid_19tracker.db.network;
+package com.example.covid_19tracker.data.network;
 
 import com.example.covid_19tracker.models.CountryData;
 import com.example.covid_19tracker.models.DistrictName;
@@ -19,10 +19,10 @@ public interface Apis {
     Call<GlobalData> getGlobalData() ;
 
     @GET("v2/countries")
-    Call<List<CountryData>> getCountryList(@Query("sort")String sortId);
+    Call<List<CountryData>> getCountryList(@Query("sort") String sortId);
 
     @GET("v2/countries/{query}")
-    Call<CountryData> getIndiaData(@Path("query")String countryPath) ;
+    Call<CountryData> getIndiaData(@Path("query") String countryPath) ;
 
     @GET("data.json")
     Call<IndiaDetailData> getDetailIndiaData() ;

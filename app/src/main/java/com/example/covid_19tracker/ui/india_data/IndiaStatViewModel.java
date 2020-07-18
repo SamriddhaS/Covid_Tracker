@@ -6,9 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
+import com.example.covid_19tracker.data.repository.Repository;
 import com.example.covid_19tracker.models.CountryData;
 import com.example.covid_19tracker.models.IndiaDetailData;
-import com.example.covid_19tracker.db.repository.Repository;
 
 public class IndiaStatViewModel extends AndroidViewModel {
 
